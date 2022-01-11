@@ -64,3 +64,9 @@ Apart from `Success` scenarios, there are certain cases where API needs to handl
 - `{ "code": 5, "msg": "No proper Aggregation pipeline generated to query" }`
 - `{ "code": 6, "msg": "Error occured while executing Aggregation pipeline" }`
 - `{ "code": 7, "msg": "Error while parsing request payload. Error: .." }`
+
+### Test cases coverage
+Go to `__tests__` folder to view the test cases written using Jest framework.
+
+### Deployment
+Node.js (Express) app can be deployed to any cloud depending on the needs.
