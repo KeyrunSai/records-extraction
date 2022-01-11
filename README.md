@@ -65,6 +65,9 @@ Apart from `Success` scenarios, there are certain cases where API needs to handl
 - `{ "code": 6, "msg": "Error occured while executing Aggregation pipeline" }`
 - `{ "code": 7, "msg": "Error while parsing request payload. Error: .." }`
 
+### Payload Schema
+Used `jsonschema` package to validate request payloads. You can find the project's payload schema in the file `request.payload.schema.js`. For the request payload, all the fields mentioned above are mandatory. If there is any field that should be considered optional, this requires change in this schema file and need code changes to handle optional fields.
+
 ### Test cases coverage
 Go to `__tests__` folder to view the test cases written using Jest framework.
 
