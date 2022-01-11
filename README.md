@@ -17,7 +17,7 @@ npm install - to install all the necessary dependencies
 npm start - to run API
 
 ## API Endpoint
-There is only 1 POST API which is responsible to accept request payload (in a specific format) and return results in a specific format.
+There is only 1 POST API (`/getRecords`) which is responsible to accept request payload (in a specific format) and return results in a specific format.
 
 ### Request Payload
 The request payload will include a JSON with 4 fields:
