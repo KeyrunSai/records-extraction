@@ -49,8 +49,7 @@ app.post('/getRecords', async function (req, res) {
     */
     let responseObject = {
         "code": -1,
-        "msg": "response payload message",
-        "records": []
+        "msg": "response payload message"
     };
 
     /* Incoming body/request payload should be in below format: 
@@ -113,8 +112,7 @@ app.listen(port, () => {
 app.use(function (err, req, res, next) {
     let responseObject = {
         "code": 7,
-        "msg": 'Error while parsing request payload. Error: ' + err.message,
-        "records": []
+        "msg": 'Error while parsing request payload. Error: ' + err.message
     };
     console.error(err.message);
     if (!err.statusCode) err.statusCode = 500;
